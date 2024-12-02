@@ -205,11 +205,7 @@ footer {
     justify-content: center;
     margin-top: 1.5rem;
 }
-.portfolio-card a {
-    display: block;          /* Ensures the whole card area is clickable */
-    text-decoration: none;   /* Removes underline from link */
-    color: inherit;          /* Inherits color from the parent element (optional) */
-}
+
 .portfolio-card {
     background: var(--background);
     border: 1px solid var(--primary);
@@ -222,7 +218,11 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.portfolio-card a {
+    display: block;          /* Ensures the whole card area is clickable */
+    text-decoration: none;   /* Removes underline from link */
+    color: inherit;          /* Inherits color from the parent element (optional) */
+}
 .portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
