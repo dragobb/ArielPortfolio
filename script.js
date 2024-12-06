@@ -19,4 +19,4 @@ document.addEventListener('keydown', (e) => {
       e.preventDefault();
       alert('Copying is disabled on this website.');
     }
-  });
+});
