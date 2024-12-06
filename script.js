@@ -14,3 +14,9 @@ document.getElementById('searchButton').addEventListener('click', () => {
         window.open(`https://www.google.com/search?q=${query}`, '_blank');
     }
 });
+document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+      alert('Copying is disabled on this website.');
+    }
+  });
